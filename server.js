@@ -21,8 +21,10 @@ app.use(cors());
 //routes
 app.use("/api/v1/users", require("./routes/userRoute"));
 
+//transaction routes
+app.use('/api/v1/transections',require("./routes/transactionRoutes"))
 //port
-const PORT = 3000 || process.env.PORT;
+const PORT = 5656 || process.env.PORT;
 
 //listen server
 app.listen(PORT, () => {
