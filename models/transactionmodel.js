@@ -21,6 +21,10 @@ const transectionSchema = new mongoose.Schema({
             type:String,
             required:[true,'description is required']
         },
+        type:{
+            type:String,
+            required:[true,'type is required']
+        },
 
     }
 },{timestamps:true})
